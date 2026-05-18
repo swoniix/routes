@@ -1,0 +1,26 @@
+.Sidebar {
+  /* width: 220px;
+  min-height: 100vh;
+  border-right: 1px solid #999;
+  padding: 20px; */
+}
+
+.Sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 20px;
+}
+
+.Sidebar li {
+  margin-bottom: 10px;
+}
+
+.Sidebar a {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+  text-align: center;
+}

@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { MainPage, CH, Java, Web, Python, C, CPP, SQL, ReactPage } from './components/nav/navig';
+
+import Sidebar from './components/sidebar/sidebar';
+
+const Root = () => {
+  return (
+    <div className="app-layout">
+      <Sidebar />
+      <div className="main-area">
+        <MainPage />
+        <hr />
+        <Outlet />
+      </div>
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Root />}>
+          <Route index element={<ReactPage />} />
+          <Route path="csharp" element={<CH />} />
+          <Route path="java" element={<Java />} />
+          <Route path="web" element={<Web />} />
+          <Route path="python" element={<Python />} />
+          <Route path="c" element={<C />} />
+          <Route path="cpp" element={<CPP />} />
+          <Route path="sql" element={<SQL />} />
+          <Route path="reactpage" element={<ReactPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
