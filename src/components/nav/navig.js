@@ -30,6 +30,9 @@ export function MainPage() {
           <li>
             <Link to="/sql">SQL</Link>
           </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
         </ul>
       </nav>
     </>

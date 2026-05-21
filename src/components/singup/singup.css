@@ -1,0 +1,194 @@
+.login-page {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-left {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.back-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+  font-size: 42px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-heading {
+  position: absolute;
+  top: 230px;
+  left: 90px;
+  z-index: 2;
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  color: #222;
+}
+
+.login-left-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.login-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+.login-form {
+  width: 480px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #111;
+  font-size: 17px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.hint {
+  margin: 12px 0 4px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.privacy,
+.forgot {
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.password-label {
+  margin-top: 45px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 50px;
+}
+
+.eye-btn {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.save-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 42px 0 22px;
+}
+
+.checkbox-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.checkbox-block input {
+  width: 28px;
+  height: 28px;
+}
+
+.checkbox-block label {
+  margin: 0;
+  color: #777;
+  font-size: 17px;
+}
+
+.info-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+.continue-btn {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 30px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-block {
+  margin-top: 90px;
+}
+
+.create-block p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.create-btn {
+  width: 100%;
+  height: 56px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}

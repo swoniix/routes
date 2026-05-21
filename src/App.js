@@ -14,6 +14,7 @@ import {
 import ChapterPage from './components/sidebar/chappage';
 import { chapterLoader } from './components/sidebar/chapdata';
 import Sidebar from './components/sidebar/sidebar';
+import Singup from './components/singup/singup';
 
 const Root = () => {
   return (
@@ -31,22 +32,25 @@ const Root = () => {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />}>
-      <Route index element={<ReactPage />} />
-      <Route
-        path="chapters/:chapterId"
-        element={<ChapterPage />}
-        loader={chapterLoader} />
+    <>
+      <Route path="/" element={<Root />}>
+        <Route index element={<ReactPage />} />
+        <Route
+          path="chapters/:chapterId"
+          element={<ChapterPage />}
+          loader={chapterLoader} />
 
-      <Route path="csharp" element={<CH />} />
-      <Route path="java" element={<Java />} />
-      <Route path="web" element={<Web />} />
-      <Route path="python" element={<Python />} />
-      <Route path="c" element={<C />} />
-      <Route path="cpp" element={<CPP />} />
-      <Route path="sql" element={<SQL />} />
-      <Route path="reactpage" element={<ReactPage />} />
-    </Route>
+        <Route path="csharp" element={<CH />} />
+        <Route path="java" element={<Java />} />
+        <Route path="web" element={<Web />} />
+        <Route path="python" element={<Python />} />
+        <Route path="c" element={<C />} />
+        <Route path="cpp" element={<CPP />} />
+        <Route path="sql" element={<SQL />} />
+        <Route path="reactpage" element={<ReactPage />} />
+      </Route>
+      <Route path="login" element={<Singup />} />
+    </>
   )
 );
 
